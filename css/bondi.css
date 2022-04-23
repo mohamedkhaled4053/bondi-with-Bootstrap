@@ -1,8 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root{
-    --dark
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc501;
+    --light-background: #eff7fa;
 }
 
 body{
     font-family: 'roboto', sans-serif;
 }
+
+/*start components */
+.main-button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.main-button:hover{
+    background-color: var(--yellow-color);
+    color: var(--red-color);
+}
+/*end components */
+
+/* strat navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+
+.navbar .nav-link{
+    color: white;
+    padding: 10px;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active{
+color: var(--green-color);
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    border: solid 1px white;
+    transition: 0.2s;
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: solid var(--green-color) 1px;
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+
+/* end navbar */
+/* start landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 70px);
+}
+/* end landing */
