@@ -27,7 +27,6 @@ body{
 .main-button:hover{
     background-color: var(--yellow-color);
     color: var(--red-color);
-    position: absolute;
 }
 /*end components */
 
@@ -65,6 +64,7 @@ color: var(--green-color);
 }
 
 /* end navbar */
+
 /* start landing */
 .landing{
     background-color: var(--dark-color);
@@ -105,3 +105,63 @@ color: var(--green-color);
     font-weight: 500;
 }
 /* end services */
+
+/* start portfolio */
+.portfolio{
+    background-color: var(--light-background);
+}
+
+.portfolio ul li{
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.portfolio ul li:hover:not(.active){
+    color: var(--red-color);
+}
+
+.portfolio li.active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+
+.portfolio img{
+    max-width: 100%;
+}
+
+.portfolio .row .box{
+    position: relative;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+
+.portfolio .row .box::after{
+    content: attr(data-work);
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    position: absolute;
+    background-color: #33d1cc8b;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+    transform: translateX(calc(-100% - 5px));
+    transition: 0.2s;
+}
+.portfolio .row .box:hover::after{
+    transform: translateX(0);
+}
+/* end portfolio */
