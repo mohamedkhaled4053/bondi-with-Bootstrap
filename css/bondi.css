@@ -165,3 +165,11 @@ color: var(--green-color);
     transform: translateX(0);
 }
 /* end portfolio */
+/* start about */
+.about .row p{
+    margin: 1rem 0;
+}
+.about .row button{
+    text-transform: uppercase;
+}
+/* end about */
