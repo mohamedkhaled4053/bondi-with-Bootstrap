@@ -170,6 +170,7 @@ color: var(--green-color);
 .about .row p{
     margin: 1rem 0;
 }
+
 .about .row button{
     text-transform: uppercase;
 }
@@ -184,10 +185,6 @@ color: var(--green-color);
     color: var(--yellow-color);
 }
 
-.team .card{
-    min-height: auto;
-    height: 455px;
-}
 
 .team .card h5{
     color: white;
@@ -195,3 +192,8 @@ color: var(--green-color);
     font-weight: bold;
 }
 /* end team */
+
+/* start techs */
+    /* no CSS needed */
+/* end techs */
+
