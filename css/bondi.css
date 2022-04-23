@@ -197,3 +197,9 @@ color: var(--green-color);
     /* no CSS needed */
 /* end techs */
 
+/* start start */
+.start{
+    background-color: var(--dark-color);
+}
+/* end start */
+
