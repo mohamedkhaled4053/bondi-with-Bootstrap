@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -26,6 +27,7 @@ body{
 .main-button:hover{
     background-color: var(--yellow-color);
     color: var(--red-color);
+    position: absolute;
 }
 /*end components */
 
@@ -69,3 +71,37 @@ color: var(--green-color);
     min-height: calc(100vh - 70px);
 }
 /* end landing */
+
+/* start services */
+.services h4{
+    color: var(--yellow-color);
+}
+
+.services .icons{
+    position: relative;
+    height: 200px;
+}
+.services .row svg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.services .num{
+    color: var(--light-background);
+    font-size: 12rem;
+}
+.services .icon{
+    color: var(--green-color);
+    font-size: 4rem;
+}
+
+.services .row h4{
+    line-height: 2;
+    font-weight: 500;
+}
+.services .row p{
+    line-height: 2;
+    font-weight: 500;
+}
+/* end services */
