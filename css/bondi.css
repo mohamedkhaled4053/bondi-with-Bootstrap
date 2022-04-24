@@ -189,7 +189,13 @@ body{
         color: var(--yellow-color);
     }
 
-
+    .team .card{
+        transition: 0.2s;
+    }
+    .team .card:hover{
+        transform: translateY(-20px);
+    }
+    
     .team .card h5{
         color: white;
         background-color: var(--green-color);
@@ -208,7 +214,15 @@ body{
 /* end start */
 
 /* start read */
-    /* no CSS needed */
+    @media (min-width:576px){
+        .read .card{
+            transition: 0.2s;
+        }
+        .read .card:hover{
+            transform: scale(1.1);
+            z-index: 2;
+        }
+    }
 /* end read */
 
 /* start subscribe */
