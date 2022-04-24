@@ -46,3 +46,29 @@ function showElement(elem) {
 function hideElement(elem) {
     elem.classList.add('hidden')
 }
+
+
+// Add class 'active' to section when near top of viewport
+function addActive() {
+    for (let section of sections) {
+        //select the li that linked with the section
+        let liOfSection = document.querySelector(`.navbar ul a[href *= ${section.getAttribute('id')}]`)
+        if (liOfSection) {
+            console.log(liOfSection);
+            //we check the position of the section
+            //make them active
+            if (section.getBoundingClientRect().top < 320) {
+                liOfSection.classList.add('active')
+            }
+            //remove the active state
+            if (section.getBoundingClientRect().bottom < 320 || section.getBoundingClientRect().top > 320) {
+                liOfSection.classList.remove('active')
+            }
+        }
+
+    }
+}
+
+// Set sections as active
+addActive()
+window.addEventListener('scroll', addActive)
