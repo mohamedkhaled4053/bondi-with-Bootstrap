@@ -33,6 +33,7 @@ body{
 /* strat navbar */
     .navbar{
         background-color: var(--dark-color);
+        transition: 0.3s;
     }
 
     .navbar .nav-link{
@@ -42,7 +43,7 @@ body{
     .navbar .nav-link:hover,
     .navbar .nav-link:focus,
     .navbar .nav-link.active{
-    color: var(--green-color);
+        color: var(--green-color);
     }
 
     .navbar .navbar-toggler{
@@ -63,12 +64,15 @@ body{
         color: var(--green-color);
     }
 
+    .hidden{
+        transform: translateY(calc(-100% - 5px));
+    }
 /* end navbar */
 
 /* start landing */
     .landing{
         background-color: var(--dark-color);
-        min-height: calc(100vh - 70px);
+        min-height: 100vh;
     }
 /* end landing */
 
