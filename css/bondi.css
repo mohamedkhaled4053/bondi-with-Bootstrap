@@ -203,3 +203,25 @@ color: var(--green-color);
 }
 /* end start */
 
+/* start read */
+    /* no CSS needed */
+/* end read */
+
+/* start subscribe */
+    .subscribe{
+        background-color: var(--yellow-color);
+    }
+    .subscribe input[type='email']{
+        border: none;
+        border-bottom: solid white 1px;
+        box-shadow: none;
+        color: white;
+    }
+    .subscribe button{
+        transition: 0.2s;
+    }
+    .subscribe button:hover{
+        color: var(--yellow-color);
+    }
+/* end subscribe */
+
