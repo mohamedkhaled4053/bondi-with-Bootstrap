@@ -13,12 +13,12 @@
 
 ## Overview
 
-a responsive webpage that was built with HTML, CSS, JS and Bootstrap
+a responsive webpage that was built with HTML, CSS, JS, and Bootstrap
 
 ### features
 - responsive on mobile
-- responsvie navbar that show the active class you are in right now
-- navbar will disapper if you are not scrolling for a while
+- responsive navbar that shows the active class you are in right now
+- navbar will disappear if you are not scrolling for a while
 - there is a filter in the portfolio section
 - there are active states and hover states
     
