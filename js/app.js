@@ -54,7 +54,6 @@ function addActive() {
         //select the li that linked with the section
         let liOfSection = document.querySelector(`.navbar ul a[href *= ${section.getAttribute('id')}]`)
         if (liOfSection) {
-            console.log(liOfSection);
             //we check the position of the section
             //make them active
             if (section.getBoundingClientRect().top < 320) {
